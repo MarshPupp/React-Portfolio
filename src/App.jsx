@@ -1,8 +1,10 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react';
+import './App.css'
 
 function App() {
   return (
     <>
+    
     </>
   );
 }
