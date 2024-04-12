@@ -1,18 +1,18 @@
-function Navigation() {
+function Navigation({currentPage, handlePageChange}) {
     return (
         <nav>
             <ul className="navbar">
                 <li className="nav-btn">
-                    <a>About</a>
+                    <a className="nav-link" href="#about" onClick={() => handlePageChange('About')} id={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About</a>
                 </li>
                 <li className="nav-btn">
-                    <a>Portfolio</a>
+                    <a className="nav-link" href="#portfolio" onClick={() => handlePageChange('Portfolio')} id={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>Portfolio</a>
                 </li>
                 <li className="nav-btn">
-                    <a>Contact</a>
+                    <a className="nav-link" href="#contact" onClick={() => handlePageChange('Contact')} id={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a>
                 </li>
                 <li className="nav-btn">
-                    <a>Resume</a>
+                    <a className="nav-link" href="#resume" onClick={() => handlePageChange('Resume')} id={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a>
                 </li>
             </ul>
         </nav>
