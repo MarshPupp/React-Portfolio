@@ -1,5 +1,10 @@
-import OmdbContainer from './components/OmdbContainer';
+import { Outlet } from 'react-router-dom';
 
-export default function App() {
-  return <OmdbContainer />;
+function App() {
+  return (
+    <>
+    </>
+  );
 }
+
+export default App;
